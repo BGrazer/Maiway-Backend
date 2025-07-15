@@ -2,7 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from flask import Flask, request, jsonify
+from flask import Blueprint, request, jsonify
 from flask_cors import CORS
 from sklearn.ensemble import RandomForestRegressor
 import socket
@@ -75,27 +75,24 @@ def check_fare_anomaly(vehicle_type, distance_km, charged_fare, discounted):
     }
 
 # Initialize App
-app = Flask(__name__)
-CORS(app)
+def create_app():
+    rfr_bp = Blueprint('rfr', __name__)
 
-@app.route('/predict_fare', methods=['POST'])
-def predict_fare():
-    if request.json is None:
-        return jsonify({"error": "Request body must be JSON"}), 400
+    @rfr_bp.route('/predict_fare', methods=['POST'])
+    def predict_fare():
+        if request.json is None:
+            return jsonify({"error": "Request body must be JSON"}), 400
 
-    data = request.json
-    vehicle_type = data.get('vehicle_type')
-    distance_km = float(data.get('distance_km', 0))
-    charged_fare = float(data.get('charged_fare', 0))
-    discounted = bool(data.get('discounted', False))
+        data = request.json
+        vehicle_type = data.get('vehicle_type')
+        distance_km = float(data.get('distance_km', 0))
+        charged_fare = float(data.get('charged_fare', 0))
+        discounted = bool(data.get('discounted', False))
 
-    if not vehicle_type or not distance_km or not charged_fare:
-        return jsonify({"error": "Missing required fields"}), 400
+        if not vehicle_type or not distance_km or not charged_fare:
+            return jsonify({"error": "Missing required fields"}), 400
 
-    result = check_fare_anomaly(vehicle_type, distance_km, charged_fare, discounted)
-    return jsonify(result)
-
-if __name__ == '__main__':
-    local_ip = socket.gethostbyname(socket.gethostname())
-    print(f"\n🧮 RFR backend running at: http://{local_ip}:5000\n")
-    app.run(host='0.0.0.0', port=5000)
+        result = check_fare_anomaly(vehicle_type, distance_km, charged_fare, discounted)
+        return jsonify(result)
+    
+    return rfr_bp
