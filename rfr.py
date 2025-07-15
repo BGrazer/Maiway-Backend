@@ -96,5 +96,5 @@ def predict_fare():
     return jsonify(result)
 
 if __name__ == '__main__':
-    print(f"\n🧮 RFR backend running at: http://0.0.0.0:5001\n")
+    print(f"\n🧮 RFR backend running at: http://0.0.0.0:5002\n")
     app.run(host='0.0.0.0', port=5001)
