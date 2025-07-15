@@ -74,7 +74,7 @@ def check_fare_anomaly(vehicle_type, distance_km, charged_fare, discounted):
         'is_anomalous': bool(is_anomalous),
     }
 
-# Initialize App
+# Initialize App Hi
 app = Flask(__name__)
 CORS(app)
 
