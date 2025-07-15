@@ -2,7 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from flask import Flask, request, jsonify
+from flask import Blueprint, request, jsonify
 from flask_cors import CORS
 from sklearn.ensemble import RandomForestRegressor
 import socket
@@ -75,10 +75,9 @@ def check_fare_anomaly(vehicle_type, distance_km, charged_fare, discounted):
     }
 
 # Initialize App Hi
-app = Flask(__name__)
-CORS(app)
+rfr_bp = Blueprint('rfr_bp', __name__)
 
-@app.route('/predict_fare', methods=['POST'])
+@rfr_bp.route('/predict_fare', methods=['POST'])
 def predict_fare():
     if request.json is None:
         return jsonify({"error": "Request body must be JSON"}), 400
@@ -95,6 +94,7 @@ def predict_fare():
     result = check_fare_anomaly(vehicle_type, distance_km, charged_fare, discounted)
     return jsonify(result)
 
-if __name__ == '__main__':
-    print(f"\n🧮 RFR backend running at: http://0.0.0.0:5002\n")
-    app.run(host='0.0.0.0', port=5001)
+# This part is no longer needed as app is run from app.py
+# if __name__ == '__main__':
+#     print(f"\n🧮 RFR backend running at: http://0.0.0.0:5002\n")
+#     app.run(host='0.0.0.0', port=5001)
