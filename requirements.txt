@@ -35,3 +35,4 @@ rtree>=1.0.0
 polyline>=1.4.0
 matplotlib>=3.5.0
 seaborn>=0.11.0
+sentence-transformers
