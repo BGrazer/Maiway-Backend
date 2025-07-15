@@ -1,0 +1,68 @@
+Origin,Destination,Distance_km,Fare_PHP
+R. Papa,Abad Santos,0.66,14.09
+R. Papa,Blumentritt,1.587,15.21
+R. Papa,Tayuman,2.258,16.02
+R. Papa,Bambang,2.876,16.77
+R. Papa,Doroteo Jose,3.524,17.55
+R. Papa,Carriedo,4.209,18.38
+R. Papa,Central Terminal,4.934,19.26
+R. Papa,UN Avenue,6.148,20.73
+R. Papa,Pedro Gil,6.902,21.64
+R. Papa,Quirino Avenue,7.696,22.6
+R. Papa,Vito Cruz,8.523,23.6
+Abad Santos,Blumentritt,0.927,14.41
+Abad Santos,Tayuman,1.598,15.22
+Abad Santos,Bambang,2.216,15.97
+Abad Santos,Doroteo Jose,2.864,16.76
+Abad Santos,Carriedo,3.549,17.58
+Abad Santos,Central Terminal,4.274,18.46
+Abad Santos,UN Avenue,5.488,19.93
+Abad Santos,Pedro Gil,6.242,20.84
+Abad Santos,Quirino Avenue,7.036,21.8
+Abad Santos,Vito Cruz,7.863,22.8
+Blumentritt,Tayuman,0.671,14.1
+Blumentritt,Bambang,1.289,14.85
+Blumentritt,Doroteo Jose,1.937,15.63
+Blumentritt,Carriedo,2.622,16.46
+Blumentritt,Central Terminal,3.347,17.34
+Blumentritt,UN Avenue,4.561,18.81
+Blumentritt,Pedro Gil,5.315,19.72
+Blumentritt,Quirino Avenue,6.109,20.68
+Blumentritt,Vito Cruz,6.936,21.68
+Tayuman,Bambang,0.618,14.04
+Tayuman,Doroteo Jose,1.266,14.82
+Tayuman,Carriedo,1.951,15.65
+Tayuman,Central Terminal,2.676,16.53
+Tayuman,UN Avenue,3.89,18.0
+Tayuman,Pedro Gil,4.644,18.91
+Tayuman,Quirino Avenue,5.438,19.87
+Tayuman,Vito Cruz,6.265,20.87
+Bambang,Doroteo Jose,0.648,14.07
+Bambang,Carriedo,1.333,14.9
+Bambang,Central Terminal,2.058,15.78
+Bambang,UN Avenue,3.272,17.25
+Bambang,Pedro Gil,4.026,18.16
+Bambang,Quirino Avenue,4.82,19.12
+Bambang,Vito Cruz,5.647,20.12
+Doroteo Jose,Carriedo,0.685,14.12
+Doroteo Jose,Central Terminal,1.41,15.0
+Doroteo Jose,UN Avenue,2.624,16.47
+Doroteo Jose,Pedro Gil,3.378,17.38
+Doroteo Jose,Quirino Avenue,4.172,18.34
+Doroteo Jose,Vito Cruz,4.999,19.34
+Carriedo,Central Terminal,0.725,14.17
+Carriedo,UN Avenue,1.939,15.64
+Carriedo,Pedro Gil,2.693,16.55
+Carriedo,Quirino Avenue,3.487,17.51
+Carriedo,Vito Cruz,4.314,18.51
+Central Terminal,UN Avenue,1.214,14.76
+Central Terminal,Pedro Gil,1.968,15.67
+Central Terminal,Quirino Avenue,2.762,16.63
+Central Terminal,Vito Cruz,3.589,17.63
+UN Avenue,Pedro Gil,0.754,14.2
+UN Avenue,Quirino Avenue,1.548,15.16
+UN Avenue,Vito Cruz,2.375,16.16
+UN Avenue,Gil Puyat,3.436,17.45
+Pedro Gil,Quirino Avenue,0.794,14.25
+Pedro Gil,Vito Cruz,1.621,15.0
+Quirino Avenue,Vito Cruz,0.827,14.29
