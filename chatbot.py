@@ -12,6 +12,10 @@ CORS(app)
 # Initialize Chatbot
 chatbot = ChatbotModel()
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "ok"}), 200
+
 @app.route('/chat', methods=['POST'])
 def chat():
     if request.json is None:
