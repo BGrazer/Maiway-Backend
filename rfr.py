@@ -86,7 +86,8 @@ def predict_fare():
     vehicle_type = data.get('vehicle_type')
     distance_km = float(data.get('distance_km', 0))
     charged_fare = float(data.get('charged_fare', 0))
-    discounted = bool(data.get('discounted', False))
+    passenger_type = data.get('passenger_type', 'Regular').lower()
+    discounted = passenger_type == 'discounted'
 
     if not vehicle_type or not distance_km or not charged_fare:
         return jsonify({"error": "Missing required fields"}), 400
@@ -97,4 +98,4 @@ def predict_fare():
 # This part is no longer needed as app is run from app.py
 # if __name__ == '__main__':
 #     print(f"\n🧮 RFR backend running at: http://0.0.0.0:5002\n")
-#     app.run(host='0.0.0.0', port=5001)
+#     app.run(host='0.0.0.0', port=5002)

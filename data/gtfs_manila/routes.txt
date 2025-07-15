@@ -1,0 +1,121 @@
+route_id,route_short_name,route_long_name,route_type,manila_id
+LTFRB_BUS1018,,Ayala Malabon via EDSA,3,partial
+LTFRB_BUS1095,,Alabang - Navotas Terminal via EDSA,3,partial
+LTFRB_BUS1106,,Antipolo-Divisoria via Shaw Blvd,3,partial
+LTFRB_BUS1135,,Baclaran-SM Fairview via Quezon Ave,3,partial
+LTFRB_BUS1168,,Moonwalk - Plaza Lawton,3,partial
+LTFRB_BUS1186,,Pandacan (Beata) - Quiapo via C. Palanca,3,complete
+LTFRB_BUS1189,,Sapang Palay - Sta. Cruz via Marilao Exit,3,partial
+LTFRB_JEEP1071,,"Baclaran - Blumentritt via L. Guinto, Quiapo",2,partial
+LTFRB_JEEP1073,,"Baclaran - Blumentritt via Mabini, Quiapo",2,partial
+LTFRB_JEEP1074,,"Baclaran - Blumentritt via Mabini, Quiapo",2,partial
+LTFRB_JEEP1122,,Balic - Balic - Bustillos via G. Tuazon,2,complete
+LTFRB_JEEP1125,,Balic - Balic - Quiapo (Barbosa) via Lepanto,2,complete
+LTFRB_JEEP1164,,"Blumentritt - Libertad via Quiapo, L. Guinto",2,partial
+LTFRB_JEEP1165,,"Blumentritt - Libertad via Quiapo, L. Guinto",2,partial
+LTFRB_JEEP1177,,"Blumentritt - Pasay RTDA via Sta. Cruz, L. Guinto",2,partial
+LTFRB_JEEP1182,,Blumentritt - Retiro,2,partial
+LTFRB_JEEP1185,,Blumentritt - Sta. Quiteria,2,partial
+LTFRB_JEEP1186,,"Blumentritt - Vito Cruz via Quiapo, Mabini",2,complete
+LTFRB_JEEP1187,,"Blumentritt - Vito Cruz via Quiapo, Mabini",2,complete
+LTFRB_JEEP1191,,Boni - Kalentong/JRC via Boni Ave.,2,partial
+LTFRB_JEEP1205,,Calumpang - Stop & Shop via Aurora Blvd.,2,partial
+LTFRB_JEEP1213,,Cartimar - EDSA/Buendia via Bel Air,2,partial
+LTFRB_JEEP1225,,"Cubao-Divisoria via Sta.Mesa,Aurora Blvd.",2,partial
+LTFRB_JEEP1244,,Dapitan - Libertad via Mabini,2,partial
+LTFRB_JEEP1260,,Divisoria - Libertad via L. Guinto,2,partial
+LTFRB_JEEP1261,,Divisoria - Libertad via L. Guinto,2,partial
+LTFRB_JEEP1265,,Divisoria - Malinta via J.A. Santos,2,partial
+LTFRB_JEEP1266,,Divisoria - Magpajo via A. Mabini,2,complete
+LTFRB_JEEP1274,,Divisoria - Pasay RTDA. Via L. Guinto,2,partial
+LTFRB_JEEP1284,,Divisoria - San Juan,2,partial
+LTFRB_JEEP1296,,Divisoria - Velasquez,2,complete
+LTFRB_JEEP1299,,Dominga - Libertad,2,partial
+LTFRB_JEEP1327,,Escolta - Libertad via L. Guinto,2,partial
+LTFRB_JEEP1330,,"Escolta - Monumento via G. del Mundo, Dasmarinas, Nueva",2,partial
+LTFRB_JEEP1337,,Espana - Rizal Ave. via Blumentritt,2,complete
+LTFRB_JEEP1382,,"Kamuning - Vito Cruz via E. Rodriguez, Mabini",2,partial
+LTFRB_JEEP1390,,L. Guinto - Zobel Roxas via Paco,2,complete
+LTFRB_JEEP1416,,"Libertad - Retiro via Mabini, Sta. Cruz",2,partial
+LTFRB_JEEP1428,,"Malanday - Pier South via Rizal Ave., P. Burgos",2,partial
+LTFRB_JEEP1478,,"Monumento - Vito Cruz via Rizal Ave., Taft Ave.",2,partial
+LTFRB_JEEP1480,,"Monumento - Vito C ruz via Rizal Ave., Mabini",2,partial
+LTFRB_JEEP1509,,P. Faura - San Andres,2,complete
+LTFRB_JEEP1526,,"Pasig (TP) - Quiapo (Echague) via Sta. Mesa, C. Palanca",2,partial
+LTFRB_JEEP1539,,Pier South - Proj. 4 via Espana,2,partial
+LTFRB_JEEP1547,,Pier South - Retiro via Sta. Cruz,2,partial
+LTFRB_JEEP1557,,Proj. 6 - T.M. Kalaw via Quezon Ave.,2,partial
+LTFRB_JEEP1565,,Punta - Pier via Manila City Hall,2,complete
+LTFRB_JEEP1568,,Quezon Ave. - Sta. Mesa Mkt. via Araneta Ave.,2,partial
+LTFRB_JEEP1584,,San Miguel - Ikot,2,complete
+LTFRB_JEEP1587,,Santol - Pina Ave. via Buenos Aires,2,partial
+LTFRB_JEEP1589,,SSS Village - Stop & Shop via Aurora Blvd.,2,partial
+LTFRB_JEEP1606,,Proj 7 - Quiapo,2,partial
+LTFRB_JEEP1614,,Malanday-Sta Cruz,2,partial
+LTFRB_JEEP1629,,Del Monte - Kanloan via Mayon,2,partial
+LTFRB_JEEP1650,,Kamagong - Malugay Ave.,2,partial
+LTFRB_JEEP1652,,Quiapo - San Miguel via Palanca,2,complete
+LTFRB_JEEP1660,,T.M. Kalaw - West Ave. via Quiapo,2,partial
+LTFRB_JEEP1674,,PIER-DELPAN ZARAGOSA,2,complete
+LTFRB_JEEP1676,,PIER SOUTH-PROJ 6,2,partial
+LTFRB_JEEP1685,,PHILCOA - PIER SOUTH,2,partial
+LTFRB_JEEP1760,,CUBAO-STOPnSHOP,2,partial
+LTFRB_JEEP1850,,RECTO - GASAK,2,partial
+LTFRB_JEEP1852,,QUIAPO - BACOOD,2,complete
+LTFRB_JEEP1854,,PROJECT 2 and 3 - WELCOME RTDA via E RODRIGUEZ,2,partial
+LTFRB_JEEP1883,,NAVOTAS - RECTO via DAGAT_DAGATAN C3_C4,2,partial
+LTFRB_JEEP1884,,NAVOTAS - DIVISORIA via H LOPEZ,2,partial
+LTFRB_JEEP1885,,NAVOTAS - DIVISORIA via H LOPEZ,2,partial
+LTFRB_JEEP1936,,FAIRVIEW WET MARKET - PIER SOUTH via QUEZON AVE,2,partial
+LTFRB_JEEP1937,,FAIRVIEW WET MARKET - PIER SOUTH via QUEZON AVE,2,partial
+LTFRB_JEEP1941,,FAIRVIEW - QUIAPO,2,partial
+LTFRB_JEEP1964,,DIVISORIA - SANGANDAAN,2,partial
+LTFRB_JEEP1967,,DIVISORIA - SAN JUAN via CM RECTO,2,partial
+LTFRB_JEEP2038,,BLUMENTRITT - REMEDIOS via QUIAPO,2,complete
+LTFRB_JEEP2045,,BLUMENTRITT - PASAY RTDA via STA CRUZ L GUINTO,2,partial
+LTFRB_JEEP2050,,BLUMENTRITT - PASAY RTDA via MABINI,2,partial
+LTFRB_JEEP2053,,BLUMENTRITT - NOVALICHES,2,partial
+LTFRB_JEEP2060,,BERNARDINO - DELPAN,2,partial
+LTFRB_JEEP2076,,BACLARAN - QUIAPO,2,complete
+LTFRB_JEEP2099,,ARROCEROS - PROJ 2&3 via ESPANA E RODRIGUEZ,2,partial
+LTFRB_JEEP2105,,ARROCEROS - CUBAO YALE,2,partial
+LTFRB_JEEP2137,,A RIVERA - STA CRUZ,2,complete
+LTFRB_JEEP2161,,Rivera Raon via Severino Reyes,2,complete
+LTFRB_JEEP2177,,Blumentrit Mabini via Quiapo,2,complete
+LTFRB_JEEP2183,,Blumentrit Vito Cruz via Quiapo Mabini,2,complete
+LTFRB_JEEP2185,,Blumentritt Recto via F Huertas Oroquit,2,complete
+LTFRB_JEEP2187,,Blumentritt Vito Cruz L Guinto,2,complete
+LTFRB_JEEP2198,,CUBAO DIVISORIA,2,partial
+LTFRB_JEEP2222,,Kamuning Remedios v Guinto,2,partial
+LTFRB_JEEP2242,,Libertad QI via LGuinto,2,partial
+LTFRB_JEEP2243,,Libertad QI via Mabini,2,partial
+LTFRB_JEEP2248,,Libertad Vito Cruz via FB Harrizon,2,partial
+LTFRB_JEEP2254,,PROJ 2&3 ESPANA,2,partial
+LTFRB_JEEP2271,,YALE CM RECTO,2,partial
+LTFRB_JEEP2360,,Navotas Recto,2,partial
+LTFRB_JEEP2377,,PagAsa Pier South via Qave,2,partial
+LTFRB_JEEP2382,,Pasay RTDA QI via L Guinto,2,partial
+LTFRB_JEEP2390,,Pier South via Road 10,2,complete
+LTFRB_JEEP2441,,Tayuman LRT Pilapil,2,complete
+LTFRB_JEEP2448,,A Rivera Plaza Dela Barca via J Santo,2,complete
+LTFRB_JEEP2473,,Baclaran Divisoria via L Guinto,2,partial
+LTFRB_JEEP2499,,Escolta-Libertad via Mabini,2,partial
+LTFRB_JEEP2500,,Escolta-MCU via GDelMundo,2,partial
+LTFRB_JEEP2501,,Escolta-MCU via GDelMundo,2,partial
+LTFRB_JEEP2503,,Espana-Rtda-Pier,2,complete
+LTFRB_JEEP2509,,Gasak-Sta Cruz via,2,partial
+LTFRB_JEEP2517,,Kalentong JRC-Namayan via P Martinez,2,partial
+LTFRB_JEEP2530,,Malinta-Sta Cruz,2,partial
+LTFRB_JEEP2539,,Malinta Pier via Monumento,2,partial
+LTFRB_JEEP2541,,Malinta Recto via F Huertas,2,partial
+LTFRB_JEEP2548,,Meycauayan Recto via BBB Monumento,2,partial
+LTFRB_JEEP2555,,Monumento Divisoria via A Santos,2,partial
+LTFRB_JEEP2568,,Munoz Market V Cruz Mabini via San Joaquin,2,complete
+LTFRB_JEEP2569,,Munoz Market V Cruz Mabini via San Joaquin,2,partial
+LTFRB_JEEP2583,,Pasig-Stop Shop,2,partial
+LTFRB_JEEP2584,,Pasig-Stop Shop,2,partial
+LTFRB_JEEP2600,,Arroceros Frisco,2,partial
+LTFRB_JEEP2606,,Arroceros Proj 6 via Quezon Ave,2,partial
+LTFRB_JEEP2609,,Arroceros Retiro via Dimasalang,2,complete
+LTFRB_JEEP2610,,Arroceros Retiro via Dimasalang,2,complete
+ROUTE_880872,PNR MC,Metro Commuter,3,partial
