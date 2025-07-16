@@ -4,6 +4,10 @@ import time
 from multiprocessing import Pool, cpu_count
 import networkx as nx
 import numpy as np
+<<<<<<< HEAD
+=======
+from rtree import index
+>>>>>>> parent of 444eeaa (revert)
 from ..utils.geo_utils import haversine_distance
 from ..models.route_segments import TransitSegment
 
@@ -56,8 +60,11 @@ def build_transit_graph(stops, routes, trips, stop_times, mode_weights, logger):
             mode = 'LRT'
         elif route_type_val == 3:
             mode = 'Bus'
+<<<<<<< HEAD
         elif route_type_val == 2:
             mode = 'Jeep'
+=======
+>>>>>>> parent of 444eeaa (revert)
         elif 200 <= route_type_val < 300:
             mode = 'Jeep'
         else:
@@ -132,7 +139,11 @@ def build_transit_graph(stops, routes, trips, stop_times, mode_weights, logger):
 
     # --- Add LRT ride edges from lrt_edges.csv ---
     import pandas as pd
+<<<<<<< HEAD
     lrt_edges_path = os.path.join(os.getcwd(), 'routing_data', 'lrt_edges.csv')
+=======
+    lrt_edges_path = os.path.join(os.getcwd(), 'data', 'lrt_edges.csv')
+>>>>>>> parent of 444eeaa (revert)
     if os.path.exists(lrt_edges_path):
         lrt_df = pd.read_csv(lrt_edges_path)
         added = 0
@@ -161,9 +172,15 @@ def build_transit_graph(stops, routes, trips, stop_times, mode_weights, logger):
             if not transit_graph.has_edge(to_stop, from_stop):
                 transit_graph.add_edge(to_stop, from_stop, **edge_data)
                 added += 1
+<<<<<<< HEAD
         logger.info(f"Added {added} LRT ride edges from routing_data/lrt_edges.csv to transit graph.")
     else:
         logger.warning(f"routing_data/lrt_edges.csv not found, skipping LRT shape edges integration.")
+=======
+        logger.info(f"Added {added} LRT ride edges from data/lrt_edges.csv to transit graph.")
+    else:
+        logger.warning(f"data/lrt_edges.csv not found, skipping LRT shape edges integration.")
+>>>>>>> parent of 444eeaa (revert)
 
     return transit_graph
 
@@ -242,6 +259,7 @@ def build_smart_walking_edges(stops, stop_times, trips, routes, mode_weights, tr
     print(f">>> Pre-filtered from {len(all_stops)} to {len(filtered_stops)} stops", flush=True)
     all_stops = filtered_stops
     
+<<<<<<< HEAD
     # Process in chunks to avoid memory issues with large datasets
     CHUNK_SIZE = 100  # Process 100 stops at a time
     results = []
@@ -332,6 +350,73 @@ def build_smart_walking_edges(stops, stop_times, trips, routes, mode_weights, tr
                     f"Elapsed: {elapsed:.1f}s | Remaining: {est_remaining:.1f}s | Found: {len(results)} edges",
                     flush=True,
                 )
+=======
+    # Use R-tree for efficient spatial queries
+    print(">>> Building R-tree for spatial indexing...", flush=True)
+    p = index.Property()
+    p.dimension = 2  # lat, lon
+    # The R-tree index will store the index of the stop in all_stops
+    idx = index.Index(properties=p)
+    
+    # Add all stops to the index
+    for i, stop_id in enumerate(all_stops):
+        lat = stops[stop_id]['lat']
+        lon = stops[stop_id]['lon']
+        # R-tree needs a bounding box: (min_lon, min_lat, max_lon, max_lat)
+        # For a point, min and max are the same.
+        idx.insert(i, (lon, lat, lon, lat))
+
+    print(">>> R-tree built. Finding walking edges...", flush=True)
+    
+    results = []
+    
+    for i, stop_id in enumerate(all_stops):
+        if (i + 1) % 100 == 0:
+            print(f">>> Processing stop {i+1}/{len(all_stops)}... Found {len(results)} edges.", flush=True)
+
+        lat = stops[stop_id]['lat']
+        lon = stops[stop_id]['lon']
+        
+        is_lrt_stop_i = stop_id in lrt_stops
+        max_dist_km = 2.0 if is_lrt_stop_i else 0.4
+        
+        # Approximate search radius in degrees. 1 degree lat ~ 111km.
+        # This is a rough but fast way to define a bounding box for the query.
+        search_radius_deg = max_dist_km / 111.0
+        bounds = (lon - search_radius_deg, lat - search_radius_deg, lon + search_radius_deg, lat + search_radius_deg)
+        
+        # Query the R-tree for stops within the bounding box
+        candidate_indices = list(idx.intersection(bounds))
+
+        for j in candidate_indices:
+            # Avoid self-loops and processing pairs twice
+            if i >= j:
+                continue
+
+            neighbor_stop_id = all_stops[j]
+            
+            # Precise distance check
+            neighbor_lat = stops[neighbor_stop_id]['lat']
+            neighbor_lon = stops[neighbor_stop_id]['lon']
+            
+            dist_m = vectorized_haversine(lat, lon, neighbor_lat, neighbor_lon)
+            dist_km = dist_m / 1000.0
+
+            is_lrt_stop_j = neighbor_stop_id in lrt_stops
+            is_lrt_connection = is_lrt_stop_i or is_lrt_stop_j
+            current_max_dist = 2.0 if is_lrt_connection else 0.4
+
+            if dist_km <= current_max_dist:
+                attrs = {
+                    'weight': transfer_penalty,
+                    'mode': 'walk',
+                    'distance': dist_km,
+                    'type': 'transfer',
+                    'is_lrt_transfer': is_lrt_connection
+                }
+                results.append((stop_id, neighbor_stop_id, attrs))
+                results.append((neighbor_stop_id, stop_id, attrs))
+>>>>>>> parent of 444eeaa (revert)
     
     print(f">>> Finished processing! Found {len(results)} walking edges", flush=True)
     walking_edges = results

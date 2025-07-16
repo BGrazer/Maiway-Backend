@@ -43,7 +43,11 @@ export DATA_DIR="data"
 
 4. Run the application:
 ```bash
+<<<<<<< HEAD
 python routing.py
+=======
+python app.py
+>>>>>>> parent of 444eeaa (revert)
 ```
 
 ## Configuration
@@ -158,7 +162,11 @@ python -m pytest tests/
 ### Code Structure
 ```
 /
+<<<<<<< HEAD
 ├── routing.py
+=======
+├── app.py
+>>>>>>> parent of 444eeaa (revert)
 ├── requirements.txt
 ├── README.md
 ├── Dockerfile

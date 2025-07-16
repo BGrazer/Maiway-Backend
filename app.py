@@ -9,7 +9,11 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'rout
 # Import Blueprints
 from rfr import rfr_bp
 from chatbot import chatbot_bp
+<<<<<<< HEAD
 from routing.routing import routing_bp
+=======
+from routing import routing_bp
+>>>>>>> parent of 444eeaa (revert)
 
 # Initialize Flask App
 app = Flask(__name__)

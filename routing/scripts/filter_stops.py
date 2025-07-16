@@ -25,9 +25,15 @@ def identify_lrt_stops(stops_df, routes_df):
     print(f"Found {len(lrt_routes)} LRT routes")
     
     # Get all stops that serve LRT routes
+<<<<<<< HEAD
     if 'stop_times.txt' in os.listdir('routing_data'):
         stop_times_df = pd.read_csv('routing_data/stop_times.txt')
         trips_df = pd.read_csv('routing_data/trips.txt')
+=======
+    if 'stop_times.txt' in os.listdir('data'):
+        stop_times_df = pd.read_csv('data/stop_times.txt')
+        trips_df = pd.read_csv('data/trips.txt')
+>>>>>>> parent of 444eeaa (revert)
         
         # Get trips for LRT routes
         lrt_trips = trips_df[trips_df['route_id'].isin(lrt_routes)]['trip_id'].tolist()
@@ -44,8 +50,13 @@ def identify_transfer_stops():
     """Identify stops that are transfer points"""
     transfer_stops = set()
     
+<<<<<<< HEAD
     if 'transfers.txt' in os.listdir('routing_data'):
         transfers_df = pd.read_csv('routing_data/transfers.txt')
+=======
+    if 'transfers.txt' in os.listdir('data'):
+        transfers_df = pd.read_csv('data/transfers.txt')
+>>>>>>> parent of 444eeaa (revert)
         transfer_stops = set(transfers_df['from_stop_id'].unique()) | set(transfers_df['to_stop_id'].unique())
         print(f"Found {len(transfer_stops)} transfer stops")
     
@@ -55,9 +66,15 @@ def identify_route_endpoints(stops_df):
     """Identify first and last stops of each route"""
     endpoint_stops = set()
     
+<<<<<<< HEAD
     if 'stop_times.txt' in os.listdir('routing_data') and 'trips.txt' in os.listdir('routing_data'):
         stop_times_df = pd.read_csv('routing_data/stop_times.txt')
         trips_df = pd.read_csv('routing_data/trips.txt')
+=======
+    if 'stop_times.txt' in os.listdir('data') and 'trips.txt' in os.listdir('data'):
+        stop_times_df = pd.read_csv('data/stop_times.txt')
+        trips_df = pd.read_csv('data/trips.txt')
+>>>>>>> parent of 444eeaa (revert)
         
         # Group by trip and get first/last stops
         for trip_id in trips_df['trip_id'].unique():
@@ -78,8 +95,13 @@ def filter_stops():
     print("=" * 50)
     
     # Load data
+<<<<<<< HEAD
     stops_df = pd.read_csv('routing_data/stops.txt')
     routes_df = pd.read_csv('routing_data/routes.txt')
+=======
+    stops_df = pd.read_csv('data/stops.txt')
+    routes_df = pd.read_csv('data/routes.txt')
+>>>>>>> parent of 444eeaa (revert)
     
     print(f"Original stops: {len(stops_df)}")
     
@@ -133,6 +155,7 @@ def filter_stops():
     
     # Backup original and save filtered
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+<<<<<<< HEAD
     backup_file = f"routing_data/stops_backup_{timestamp}.txt"
     shutil.copy('routing_data/stops.txt', backup_file)
     print(f"Backup saved: {backup_file}")
@@ -155,6 +178,30 @@ def filter_stops():
     
     print("\nStop filtering completed!")
     print("Run 'python routing.py' to rebuild cache with filtered stops")
+=======
+    backup_file = f"data/stops_backup_{timestamp}.txt"
+    shutil.copy('data/stops.txt', backup_file)
+    print(f"Backup saved: {backup_file}")
+    
+    # Save filtered stops
+    filtered_stops.to_csv('data/stops.txt', index=False)
+    print("Filtered stops saved to data/stops.txt")
+    
+    # Also filter stop_times.txt
+    if 'stop_times.txt' in os.listdir('data'):
+        stop_times_df = pd.read_csv('data/stop_times.txt')
+        filtered_stop_times = stop_times_df[stop_times_df['stop_id'].isin(kept_stops)]
+        
+        backup_stop_times = f"data/stop_times_backup_{timestamp}.txt"
+        shutil.copy('data/stop_times.txt', backup_stop_times)
+        print(f"Stop times backup saved: {backup_stop_times}")
+        
+        filtered_stop_times.to_csv('data/stop_times.txt', index=False)
+        print(f"Filtered stop times: {len(filtered_stop_times)} (from {len(stop_times_df)})")
+    
+    print("\nStop filtering completed!")
+    print("Run 'python app.py' to rebuild cache with filtered stops")
+>>>>>>> parent of 444eeaa (revert)
 
 if __name__ == "__main__":
     filter_stops() 

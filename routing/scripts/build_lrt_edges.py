@@ -13,9 +13,15 @@ def haversine(lat1, lon1, lat2, lon2):
     return R * c
 
 # --- Load data ---
+<<<<<<< HEAD
 stops = pd.read_csv('routing_data/stops.txt', header=0)
 stop_times = pd.read_csv('routing_data/stop_times.txt', header=0)
 shapes = pd.read_csv('routing_data/shapes.txt', header=0)
+=======
+stops = pd.read_csv('data/stops.txt', header=0)
+stop_times = pd.read_csv('data/stop_times.txt', header=0)
+shapes = pd.read_csv('data/shapes.txt', header=0)
+>>>>>>> parent of 444eeaa (revert)
 
 # Ensure lat/lon are floats
 shapes['lat'] = shapes.iloc[:,1].astype(float) if 'lat' not in shapes.columns else shapes['lat'].astype(float)
@@ -67,5 +73,10 @@ for i in range(len(lrt_stops) - 1):
     edges.append(edge)
 
 edges_df = pd.DataFrame(edges)
+<<<<<<< HEAD
 edges_df.to_csv('routing_data/lrt_edges.csv', index=False)
 print(f"LRT ride edges saved to routing_data/lrt_edges.csv ({len(edges)} edges)") 
+=======
+edges_df.to_csv('data/lrt_edges.csv', index=False)
+print(f"LRT ride edges saved to data/lrt_edges.csv ({len(edges)} edges)") 
+>>>>>>> parent of 444eeaa (revert)
