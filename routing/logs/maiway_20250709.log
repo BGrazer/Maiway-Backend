@@ -1,0 +1,59 @@
+2025-07-09 00:08:07,753 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:14:11,049 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:14:23,036 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:26:15,123 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:30:20,122 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:30:33,090 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:38:54,656 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:38:57,937 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:39:20,391 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:42:58,218 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:43:21,404 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:57:52,470 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 00:58:17,132 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:10:25,287 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:10:34,308 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:14:02,730 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:14:44,745 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:14:54,557 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:24:15,880 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:24:53,047 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:25:03,383 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:28:49,860 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:31:38,762 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:31:48,518 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:34:33,729 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 01:34:44,262 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 02:18:13,758 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 02:24:31,137 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 02:27:23,166 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 09:03:52,858 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 09:04:14,778 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 09:28:47,889 - maiway - ERROR - error:57 - Failed to initialize unified route service: max() iterable argument is empty
+2025-07-09 09:33:03,211 - maiway - ERROR - error:57 - Failed to initialize unified route service: max() iterable argument is empty
+2025-07-09 09:43:19,395 - maiway - ERROR - error:57 - Failed to initialize unified route service: max() iterable argument is empty
+2025-07-09 09:44:25,189 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 09:45:11,763 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 11:45:18,192 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:45:18,624 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:45:21,240 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:45:22,257 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:45:22,293 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:45:30,519 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:45:44,894 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:46:20,692 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:46:26,439 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:46:30,781 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:46:32,951 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:46:34,651 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:46:50,974 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:46:51,030 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:47:17,086 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:47:20,190 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:47:46,820 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:47:57,375 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:48:04,687 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 11:48:13,648 - maiway - ERROR - error:57 - Failed to initialize unified route service: 
+2025-07-09 12:18:56,339 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 12:19:21,479 - maiway - INFO - info:45 - Unified route service initialized successfully
+2025-07-09 12:27:19,623 - maiway - INFO - info:45 - Unified route service initialized successfully

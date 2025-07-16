@@ -1,0 +1,12 @@
+from_stop_id,to_stop_id,transfer_type,min_transfer_time
+stop_1_001,stop_2_001,0,60
+stop_2_001,stop_1_001,0,60
+stop_1_083,stop_2_083,0,60
+stop_2_083,stop_1_083,0,60
+stop_1_002,stop_2_002,0,60
+stop_2_002,stop_1_002,0,60
+stop_1_003,stop_2_003,0,60
+stop_2_003,stop_1_003,0,60
+stop_1_004,stop_2_004,0,60
+stop_2_004,stop_1_004,0,60
+# ... (and so on for all colocated/nearby stops) 
