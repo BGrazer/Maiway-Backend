@@ -18,7 +18,7 @@ CORS(app)
 # Register Blueprints
 app.register_blueprint(rfr_bp)
 app.register_blueprint(chatbot_bp)
-app.register_blueprint(routing_bp, url_prefix='/routing')
+app.register_blueprint(routing_bp)
 
 if __name__ == '__main__':
     print(f"\n🚀 Combined backend running at: http://0.0.0.0:5001\n")
