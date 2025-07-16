@@ -1,2 +1,0 @@
-agency_id,agency_name,agency_url,agency_timezone
-MANILA_TRANSIT,Manila Transit Authority,https://manila-transit.gov.ph,Asia/Manila

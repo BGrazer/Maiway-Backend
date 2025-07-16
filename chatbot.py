@@ -65,7 +65,7 @@ def reload_chatbot():
 def serve_faq_data():
     return send_from_directory(os.path.join(current_app.root_path, 'data'), 'faq_data.json')
 
-# This part is no longer needed as app is run from app.py hi
+# This part is no longer needed as app is run from app.py
 # if __name__ == '__main__':
 #     print(f"\n🤖 Chatbot backend running at: http://0.0.0.0:5001\n")
 #     app.run(host='0.0.0.0', port=5001)
